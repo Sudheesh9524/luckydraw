@@ -70,7 +70,6 @@ function App() {
       </div>
       <div id="firstprize" className='first-prize' style={{ visibility: "hidden" }}>
         <text>1ST PRIZE</text>
-        {/* //dddddddddddddd */}
       </div>
       <div className="boxes-container">
         {numbers.map((number, index) => (
