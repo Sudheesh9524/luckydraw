@@ -1,38 +1,127 @@
-.App {
+/* App.css */
+.full-blue {
+  /* background-color: rgb(26, 15, 66); */
+  background: #0B1952;
+  width: 100%;
+  height: 645px;
+  position: relative !important;
+  overflow-y: hidden;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.centered-button {
+  padding: 0px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.congrats-banner {
+  position: relative;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  z-index: 2; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.congrats-image {
+  width: 612px;
+  height: 79px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.boxes-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* height: 300px; */
+  width: 100%;
+  padding: 184px 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.box {
+  width: 87px;
+  height: 127px;
+  background-color: rgb(57 8 83);
+  border: 3px solid rgb(132, 21, 188);
+  margin: 0 7px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.background-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+  background-size: cover;
+  z-index: 0; /* Ensure the background image is behind everything */
+}
+
+.backgroundimages {
+  width: 100%;
+  z-index: -1; /* Ensure the background image is behind everything */
+}
+.number {
+  position: absolute;
+  font-size: 112px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #ffffff 29%, #008ea9 62%, #27e4ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.light-image {
+ 
+  position: absolute;
+  bottom: 210px;
+ 
+}
+.botton-Image {
+  position: relative;
+  width: 100%;
+  height: 47px;
+  padding: 100px 0px 0 0px;
+}
+.first-prize {position: absolute;
+  position: absolute;
+    left: 42%;
+    color: white;
+    padding: 44px 0px;
+    font-size: 58px;
+    font-style: italic;
+    font-family: fantasy;
+    padding-top: 84px;
+}
+.winner-effect {
+  animation: winner-animation 1s ease infinite;
+}
+
+@keyframes winner-animation {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color:white;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    color: red;
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    color:white;
   }
 }
